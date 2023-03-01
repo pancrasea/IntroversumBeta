@@ -7,7 +7,7 @@
     "author": "Xhasi",
     "url": "https://tryfobia.luminary.ml/",
     "engines": {
-        "node": "^18.x.x"
+        "node": "^19.x.x"
     },
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
