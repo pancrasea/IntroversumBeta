@@ -194,7 +194,7 @@ class Login {
         let loginBtn = document.querySelector(".login-btn")
         let mojangBtn = document.querySelector('.mojang')
 
-        mojangBtn.innerHTML = "Offline"
+        mojangBtn.innerHTML = "No Premium"
 
         mojangBtn.addEventListener("click", () => {
             document.querySelector(".login-card").style.display = "none";
@@ -211,11 +211,11 @@ class Login {
             loginBtn.disabled = true;
             mailInput.disabled = true;
             passwordInput.disabled = true;
-            infoLogin.innerHTML = "Connexion en cours...";
+            infoLogin.innerHTML = "Conectando...";
 
 
             if (mailInput.value == "") {
-                infoLogin.innerHTML = "Entrez votre adresse email / Nom d'utilisateur"
+                infoLogin.innerHTML = "No has ingresado tu nickname"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;
@@ -224,7 +224,7 @@ class Login {
             }
 
             if (mailInput.value.length < 3) {
-                infoLogin.innerHTML = "Votre nom d'utilisateur doit avoir au moins 3 caractères"
+                infoLogin.innerHTML = "Su nickname debe tener al menos 3 caracteres"
                 cancelMojangBtn.disabled = false;
                 loginBtn.disabled = false;
                 mailInput.disabled = false;

@@ -1,16 +1,73 @@
-.bottom-bar-home {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 70px;
-    border-top-left-radius: 40px;
-    border-top-right-radius: 40px;
-    background: #00000080;
+body{
+    margin: 0;
+}
+
+.launcher-title {
+    margin: 30px;
+    margin-top: 55px;
+    text-align: justify;
+    color: rgb(247, 247, 247);
+    font: normal normal bold 19px/29px Poppins;
+}
+
+.div-title-decorrido {
     display: flex;
 }
 
+.launcher-title h1 {
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+}
+
+.version-color {
+    color: rgb(168, 131, 255);
+    margin-left: 15px;
+}
+
+.launcher-title h2 {
+    text-align: justify;
+    color: #F1F1F1;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    font: normal normal bold 18px/29px Poppins;
+}
+
+.actividad-proyect {
+    margin-left: 15px;
+    margin-top: 13px;
+    padding: 0.2px;
+    text-align: center;
+    background-color: rgb(168, 131, 255);
+    color: #1b1b1b;
+    width: 135px;
+    height: 30px;
+    font: normal normal bold 12px/29px Poppins;
+    border-radius: 10px;
+}
+
+.bottom-bar-home {
+    position: fixed;
+    bottom: 0;
+    width: 30%;
+    height: 70px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    background: #0000005b;
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+
+.icons-settings {
+    margin: 30px;
+    margin-left: 0;
+    width: 15%;
+    background: #0000005b;
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
 .player-head {
-    margin: auto 30px;
+    margin: 15px;
     background-image: url("../../images/default/setve.png");
     background-size: cover;
     background-position: center;
@@ -29,10 +86,9 @@
 }
 
 .settings-btn {
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    margin: 15px;
     text-align: center;
+    width: 50px;
     height: 50px;
     border: none;
     border-radius: 15px;
@@ -46,6 +102,77 @@
 
 .icon-settings:before {
     font-size: 40px;
+}
+
+.icons-redes {
+    margin: 30px;
+    margin-left: 0;
+    width: 10%;
+    background: #0000005b;
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.redes-discord {
+    margin: 15px;
+    background-image: url("../../images/redes/tryfobialogo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+
+.redes-discord:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px rgb(202, 253, 255));
+    transition: 0.2s;
+}
+
+.redes-tw {
+    margin: 15px;
+    background-image: url("../../images/redes/twitter.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+}
+
+.redes-tw:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px rgb(202, 253, 255));
+    transition: 0.2s;
+}
+
+.redes-paypal {
+    margin: 15px;
+    background-image: url("../../images/redes/paypal.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+}
+
+.redes-paypal:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px rgb(202, 253, 255));
+    transition: 0.2s;
 }
 
 .play-element {
@@ -64,11 +191,20 @@
     height: 37px;
     border-radius: 20px;
     border: none;
-    background: #00bd7a;
+    background: rgb(255, 255, 255);
     font: normal normal bold 20px/25px Poppins;
     color: #121212;
     margin: 15px 0;
-    box-shadow: 0 0 5px #00bd7a;
+    transition: 0.2s;
+}
+.play-btn:hover {
+    border-radius: 10px;
+    color: #F1F1F1;
+    box-shadow: 0 0 5px rgb(168, 131, 255);
+    background: rgb(168, 131, 255);
+    transition: 0.2s;
+    cursor: pointer;
+    
 }
 
 .download-content {
@@ -98,20 +234,23 @@
 }
 
 .progress-bar::-webkit-progress-value {
-    background-color: #00bd7a;
+    background-color: rgb(251, 249, 255);
     border-radius: 10px;
 }
 
 .body-home {
     display: flex;
-    height: 78vh;
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    height: 57vh;
     margin: 3rem 2rem;
 }
 
 .news-list {
     position: relative;
     overflow: auto;
-    width: 100%;
+    width: 80%;
 }
 
 .news-list::-webkit-scrollbar {
@@ -120,12 +259,12 @@
 
 .news-block {
     margin-bottom: 1rem;
-    transition: opacity 1s;
-    opacity: .4;
+    transition: opacity 0.3s;
+    opacity: .5;
 }
 
 .news-block:hover {
-    transition: opacity 1s;
+    transition: opacity 0.3s;
     opacity: 1;
 }
 
@@ -139,7 +278,8 @@
     left: 0px;
     width: 100%;
     height: 87px;
-    background-color: #292929;
+    background-color: rgba(5, 5, 5, 0.692);
+    backdrop-filter: blur(10px);
     border-radius: 10px 10px 0px 0px;
     transition: color .2s, filter .2s;
 }
@@ -196,7 +336,8 @@
 .bbWrapper {
     position: relative;
     padding: 20px;
-    background-color: #1f1f1f;
+    background-color: rgba(5, 5, 5, 0.541);
+    backdrop-filter: blur(10px);
     font-family: Poppins;
     font-size: 13px !important;
     color: #E1E1E1;
@@ -218,7 +359,7 @@
 .info-list {
     position: relative;
     width: 65vh;
-    padding-left: 1rem;
+    padding-right: 1rem;
     background: none;
 }
 

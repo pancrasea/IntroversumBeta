@@ -11,7 +11,40 @@ body {
     margin: 0;
     padding: 0;
     user-select: none;
+    /*
     background: linear-gradient(#00000066, #00000066), url("../images/background/light.jpg") black no-repeat center center scroll;
+*/
+    background-color: transparent;
+}
+
+.main-background {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+    
 }
 
 img {
@@ -93,52 +126,11 @@ img {
     width: 127px;
 }
 
-.dot {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    margin-left: 14px;
-    margin-top: 12px;
-    background: #ffffff;
-    border-radius: 50%;
-    transform: translateX(0);
-    animation: dot 2.8s infinite;
-}
-
-.dots {
-    transform: translateX(0);
-    margin-top: 12px;
-    margin-left: 31px;
-    animation: dots 2.8s infinite;
-}
-
-.dots span {
-    display: block;
-    float: left;
-    width: 16px;
-    height: 16px;
-    margin-left: 16px;
-    background: #ffffff;
-    border-radius: 50%;
-}
-
-@keyframes dot {
-    50% {
-        transform: translateX(96px);
-    }
-}
-
-@keyframes dots {
-    50% {
-        transform: translateX(-31px);
-    }
-}
-
 .preload-title {
     font: normal normal bold 30px/40px Poppins;
     color: #E1E1E1;
     text-align: center;
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 .panel {
@@ -168,4 +160,39 @@ img {
     to {
         transform: rotate(359deg);
     }
+}
+
+/* ANIMACION CARGANDO */
+
+.preload-animation {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 0 auto;
+
+}
+
+.preload-animation > div {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 3rem .5rem;
+    border-radius: 20%;
+    background-color: #E1E1E1;
+    text-shadow: 2px 2px 6px rgb(0, 0, 0);
+    animation: preload-animation .6s infinite alternate;
+}
+
+@keyframes preload-animation {
+    to {
+        opacity: .1;
+        transform: translate3d(0, -1rem, 0);
+    }
+}
+
+.preload-animation > div:nth-child(2) {
+    animation-delay: .2s;
+}
+
+.preload-animation > div:nth-child(3) {
+    animation-delay: .4s;
 }

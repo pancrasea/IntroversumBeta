@@ -23,8 +23,9 @@ function destroyWindow() {
 function createWindow() {
     destroyWindow();
     mainWindow = new electron.BrowserWindow({
+        transparent: true,
         title: pkg.preductname,
-        width: 1280,
+        width: 1100,
         height: 720,
         minWidth: 980,
         minHeight: 552,

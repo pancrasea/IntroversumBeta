@@ -1,3 +1,10 @@
+/* Minecraft */
+
+@font-face {
+    font-family: 'Mine';
+    src: local('MinecraftFifty-Solid'), local('MinecraftFifty-Solid'), url('../fonts/MinecraftFifty-Solid.woff2') format('woff2');
+}
+
 /* Poppins */
 
 @font-face {

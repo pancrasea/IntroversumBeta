@@ -22,9 +22,9 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Je... vie...", "author": "Luuxis" },
-            { "message": "Salut je suis du code.", "author": "Luuxis" },
-            { "message": "Linux n' ai pas un os, mais un kernel.", "author": "Luuxis" }
+            { "message": "Estoy a medio corazón.", "author": "Xhest Studio" },
+            { "message": "Como que 2 de tierra por esmeraldas.", "author": "Xhest Studio" },
+            { "message": "Gracias por jugar.", "author": "Xhest Studio" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -44,17 +44,17 @@ class Splash {
 
     async checkUpdate() {
         if (dev) return this.startLauncher();
-        this.setStatus(`recherche de mise à jour...`);
+        this.setStatus(`buscando actualización...`); //recherche de mise à jour...
 
         ipcRenderer.invoke('update-app').then(err => {
             if (err.error) {
                 let error = err.message;
-                this.shutdown(`erreur lors de la recherche de mise à jour :<br>${error}`);
+                this.shutdown(`error al buscar actualizacion :<br>${error}`);
             }
         })
 
         ipcRenderer.on('updateAvailable', () => {
-            this.setStatus(`Mise à jour disponible !`);
+            this.setStatus(`¡ Actualización disponible !`);
             this.toggleProgress();
             ipcRenderer.send('start-update');
         })
@@ -79,7 +79,7 @@ class Splash {
     }
 
     startLauncher() {
-        this.setStatus(`Démarrage du launcher`);
+        this.setStatus(`Iniciando el launcher`);
         ipcRenderer.send('main-window-open');
         ipcRenderer.send('update-window-close');
     }
