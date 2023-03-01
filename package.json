@@ -2,7 +2,7 @@
     "name": "xhest-launcher",
     "preductname": "Xhest Launcher",
     "version": "1.0.0",
-    "description": "Xhest Launcher (Premium, No Premium)",
+    "description": "Xhest Launcher (Premium y No Premium)",
     "main": "src/app.js",
     "author": "Xhasi",
     "url": "https://tryfobia.luminary.ml/",
