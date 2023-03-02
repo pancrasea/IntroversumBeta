@@ -21,7 +21,45 @@ body {
     width: 100vw;
     height: 100vh;
     border-radius: 10px;
+    /*
+    position: relative;
+    background-image: url(../images/background/juaniquilacopa.png);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    animation: change 40s infinite ease-in-out;
+    */
 }
+/*
+@keyframes change {
+    0%
+    {
+        background-image: url(../images/background/juaniquilacopa2.png);
+    }
+    20%
+    {
+        background-image: url(../images/background/juaniquilacopa3.png);
+    }
+    40%
+    {
+        background-image: url(../images/background/juaniquilacopa.png);
+    }
+    60%
+    {
+        background-image: url(../images/background/juaniquilacopa2.png);
+    }
+    80%
+    {
+        background-image: url(../images/background/juaniquilacopa3.png);
+    }
+    100%
+    {
+        background-image: url(../images/background/juaniquilacopa2.png);
+    }
+    
+}
+*/
 
 .back-video {
     position: absolute;
@@ -62,6 +100,8 @@ img {
     -webkit-app-region: drag;
     z-index: 11;
     display: none;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .frame {

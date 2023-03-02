@@ -259,6 +259,7 @@ body{
 
 .news-block {
     margin-bottom: 1rem;
+    backdrop-filter: blur(10px);
     transition: opacity 0.3s;
     opacity: .5;
 }
