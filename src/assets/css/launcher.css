@@ -21,6 +21,7 @@ body {
     width: 100vw;
     height: 100vh;
     border-radius: 10px;
+    background-image: url(../images/background/retomx-fondo.png);
     /*
     position: relative;
     background-image: url(../images/background/juaniquilacopa.png);
@@ -59,7 +60,7 @@ body {
     }
     
 }
-*/
+
 
 .back-video {
     position: absolute;
@@ -84,6 +85,8 @@ body {
     }
     
 }
+*/
+
 
 img {
     -webkit-user-drag: none;

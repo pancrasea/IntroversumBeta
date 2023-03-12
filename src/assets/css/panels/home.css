@@ -19,8 +19,10 @@ body{
 }
 
 .version-color {
-    color: rgb(255, 188, 64);
+    color: rgb(235, 235, 235);
+    font: normal normal bold 17px/29px Poppins;
     margin-left: 15px;
+    margin-top: 30px;
 }
 
 .launcher-title h2 {
@@ -35,9 +37,9 @@ body{
     margin-top: 13px;
     padding: 0.2px;
     text-align: center;
-    background-color: rgb(168, 131, 255);
+    background-color: #ff194b;
     color: #1b1b1b;
-    width: 135px;
+    width: 70px;
     height: 30px;
     font: normal normal bold 12px/29px Poppins;
     border-radius: 10px;
@@ -53,12 +55,13 @@ body{
     background: #0000005b;
     backdrop-filter: blur(10px);
     display: flex;
+    align-items: center;
 }
 
 .icons-settings {
     margin: 30px;
     margin-left: 0;
-    width: 15%;
+    width: 10%;
     background: #0000005b;
     backdrop-filter: blur(10px);
     border-top-right-radius: 20px;
@@ -186,7 +189,7 @@ body{
 }
 
 .play-btn {
-    top: 10px;
+    top: 15px;
     width: 160px;
     height: 37px;
     border-radius: 20px;
@@ -200,8 +203,8 @@ body{
 .play-btn:hover {
     border-radius: 10px;
     color: #F1F1F1;
-    box-shadow: 0 0 5px rgb(168, 131, 255);
-    background: rgb(168, 131, 255);
+    box-shadow: 0 0 5px rgb(255, 162, 86);
+    background: rgb(255, 162, 86);
     transition: 0.2s;
     cursor: pointer;
     

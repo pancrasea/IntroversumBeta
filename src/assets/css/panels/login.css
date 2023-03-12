@@ -29,8 +29,8 @@
 }
 
 .login-type-btn:hover {
-    background-color: rgb(168, 131, 255);
-    box-shadow: 0 0 5px rgb(168, 131, 255);
+    background-color: rgb(255, 162, 86);
+    box-shadow: 0 0 5px rgb(255, 162, 86);
 }
 
 .login-type-btn:disabled {
@@ -100,8 +100,8 @@
 }
 
 .login-btn:hover {
-    background-color: rgb(168, 131, 255);
-    box-shadow: 0 0 5px rgb(168, 131, 255);
+    background-color: rgb(255, 162, 86);
+    box-shadow: 0 0 5px rgb(255, 162, 86);
 }
 
 .cancel {
