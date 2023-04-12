@@ -1,7 +1,7 @@
 {
     "name": "luminary-launcher",
     "preductname": "Luminary Launcher",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "description": "Luminary Launcher (Premium y No Premium)",
     "main": "src/app.js",
     "author": "Xhasi",
