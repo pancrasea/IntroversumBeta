@@ -335,6 +335,7 @@ body{
     margin-left: 400px;
     overflow: auto;
     width: 90%;
+    height: 90%;
 }
 
 .news-list::-webkit-scrollbar {
