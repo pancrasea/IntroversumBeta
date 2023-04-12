@@ -22,9 +22,9 @@ class Splash {
 
     async startAnimation() {
         let splashes = [
-            { "message": "Estoy a medio corazón.", "author": "Xhest Studio" },
-            { "message": "Como que 2 de tierra por esmeraldas.", "author": "Xhest Studio" },
-            { "message": "Gracias por jugar.", "author": "Xhest Studio" }
+            { "message": "Estoy a medio corazón.", "author": "Luminary Studio" },
+            { "message": "¡Hola!", "author": "Luminary Studio" },
+            { "message": "Gracias por jugar.", "author": "Luminary Studio" }
         ]
         let splash = splashes[Math.floor(Math.random() * splashes.length)];
         this.splashMessage.textContent = splash.message;
@@ -74,7 +74,7 @@ class Splash {
             this.startLauncher();
         }).catch(e => {
             console.error(e);
-            return this.shutdown("Aucune connexion internet détectée,<br>veuillez réessayer ultérieurement.");
+            return this.shutdown("No se ha detectado ninguna conexión a Internet.<br>Vuelva a intentarlo más tarde.");
         })
     }
 

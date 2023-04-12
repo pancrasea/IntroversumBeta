@@ -5,6 +5,14 @@
     src: local('MinecraftFifty-Solid'), local('MinecraftFifty-Solid'), url('../fonts/MinecraftFifty-Solid.woff2') format('woff2');
 }
 
+/* Elegant */
+
+@font-face {
+    font-family: 'ele';
+    font-style: normal;
+    src: local('AltoneTrial-Regular'), local('AltoneTrial-Regular'), url('../fonts/AltoneTrial-Regular.ttf') format('ttf');
+}
+
 /* Poppins */
 
 @font-face {

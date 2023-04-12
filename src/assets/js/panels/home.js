@@ -27,6 +27,7 @@ class Home {
         this.redesdiscordbtn() 
         this.redestwbtn()
         this.redespaypalbtn()
+        this.barBtns()
     }
 
     async initNews() {
@@ -162,7 +163,7 @@ class Home {
 
             launch.on('progress', (progress, size) => {
                 progressBar.style.display = "block"
-                document.querySelector(".text-download").innerHTML = `Téléchargement ${((progress / size) * 100).toFixed(0)}%`
+                document.querySelector(".text-download").innerHTML = `Descargando ${((progress / size) * 100).toFixed(0)}%`
                 ipcRenderer.send('main-window-progress', { progress, size })
                 progressBar.value = progress;
                 progressBar.max = size;
@@ -170,7 +171,7 @@ class Home {
 
             launch.on('check', (progress, size) => {
                 progressBar.style.display = "block"
-                document.querySelector(".text-download").innerHTML = `Vérification ${((progress / size) * 100).toFixed(0)}%`
+                document.querySelector(".text-download").innerHTML = `Verificando ${((progress / size) * 100).toFixed(0)}%`
                 progressBar.value = progress;
                 progressBar.max = size;
             });
@@ -188,7 +189,7 @@ class Home {
 
             launch.on('patch', patch => {
                 console.log(patch);
-                info.innerHTML = `Patch en cours...`
+                info.innerHTML = `Ejecutando...`
             });
 
             launch.on('data', (e) => {
@@ -196,7 +197,7 @@ class Home {
                 if (launcherSettings.launcher.close === 'close-launcher') ipcRenderer.send("main-window-hide");
                 ipcRenderer.send('main-window-progress-reset')
                 progressBar.style.display = "none"
-                info.innerHTML = `Demarrage en cours...`
+                info.innerHTML = `en curso...`
                 console.log(e);
             })
 
@@ -205,7 +206,7 @@ class Home {
                 progressBar.style.display = "none"
                 info.style.display = "none"
                 playBtn.style.display = "block"
-                info.innerHTML = `Vérification`
+                info.innerHTML = `Verificando...`
                 new logger('Launcher', '#7289da');
                 console.log('Close');
             });
@@ -234,11 +235,45 @@ class Home {
         }
     }
 
+// acciones para cambiar de paneles
+
     initBtn() {
         document.querySelector('.settings-btn').addEventListener('click', () => {
             changePanel('settings');
         });
     }
+// -----------------------(paneles internos, bar: info, proyecto etc)--------------------------------
+    async barBtns() {
+        const btn1 = document.querySelector("#tab1-btn");
+        const btn2 = document.querySelector("#tab2-btn");
+        const btn3 = document.querySelector("#tab3-btn");
+        const tab1 = document.querySelector("#tab1");
+        const tab2 = document.querySelector("#tab2");
+        const tab3 = document.querySelector("#tab3");
+
+        btn1.addEventListener("click", function(){
+            if(tab1.style.display === "none") {
+                tab1.style.display = "block";
+                tab2.style.display = "none";
+                tab3.style.display = "none";
+            } 
+        });
+        btn2.addEventListener("click", function(){
+            if(tab2.style.display === "none") {
+                tab1.style.display = "none";
+                tab2.style.display = "block";
+                tab3.style.display = "none";
+            } 
+        });
+        btn3.addEventListener("click", function(){
+            if(tab3.style.display === "none") {
+                tab1.style.display = "none";
+                tab2.style.display = "none";
+                tab3.style.display = "block";
+            } 
+        });
+    }
+//------------------------------------------------------------------
 
     async getdate(e) {
         let date = new Date(e)
@@ -250,3 +285,4 @@ class Home {
     }
 }
 export default Home;
+

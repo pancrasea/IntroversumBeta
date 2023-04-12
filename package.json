@@ -1,11 +1,11 @@
 {
-    "name": "xhest-launcher",
-    "preductname": "Xhest Launcher",
-    "version": "1.0.4",
-    "description": "Xhest Launcher (Premium y No Premium)",
+    "name": "luminary-launcher",
+    "preductname": "Luminary Launcher",
+    "version": "1.2.0",
+    "description": "Luminary Launcher (Premium y No Premium)",
     "main": "src/app.js",
     "author": "Xhasi",
-    "url": "https://launcherxhest.000webhostapp.com/",
+    "url": "http://193.31.31.5:25532/launchers/LuminaryLauncher/",
     "engines": {
         "node": "^18.0.0"
     },
@@ -20,6 +20,7 @@
     },
     "dependencies": {
         "electron-updater": "^5.0.1",
+        "jquery": "^3.6.4",
         "minecraft-java-core": "^3.1.1",
         "node-fetch": "^2.6.7"
     },
