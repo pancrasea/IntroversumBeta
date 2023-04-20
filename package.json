@@ -1,11 +1,11 @@
 {
     "name": "luminary-launcher",
     "preductname": "Luminary Launcher",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Luminary Launcher (Premium y No Premium)",
     "main": "src/app.js",
     "author": "Xhasi",
-    "url": "http://193.31.31.5:25532/launchers/LuminaryLauncher/",
+    "url": "http://212.192.28.131:25567/launchers/LuminaryLauncher/",
     "engines": {
         "node": "^18.0.0"
     },
