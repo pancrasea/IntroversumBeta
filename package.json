@@ -1,7 +1,7 @@
 {
     "name": "introversum-launcher",
     "preductname": "Introversum Launcher",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Introversum Launcher",
     "main": "src/app.js",
     "author": "Xhasi",
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pancrasea/Introversum.git"
+        "url": "git+https://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@github.com/pancrasea/Introversum.git"
     }
 }
