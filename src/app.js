@@ -3,7 +3,7 @@
  * @license CC-BY-NC 4.0 - https://creativecommons.org/licenses/by-nc/4.0/
  */
 
- const clientId = '1095795018305917049';
+ const clientId = '1104994541897011204';
  const DiscordRPC = require('discord-rpc');
  const RPC = new DiscordRPC.Client({ transport: 'ipc'});
  
@@ -12,20 +12,22 @@
  async function setActivity() {
     if (!RPC) return;
     RPC.setActivity({
-        details: `Reto MX`,
+        details: `jugando The Minerooms`,
         /*state: `Iniciando una Aventura!`,*/
         startTimestamp: Date.now(),
-        largeImageKey: 'logo-lumi',
-        largeImageText: `Logo Luminary`,
+        largeImageKey: 'introversum_logo_hd',
+        largeImageText: `Logo Introversum`,
+        smallImageKey: 'minecraft_logo_icon',
+        smallImageText: `Minecraft`,
         instance: false,
         buttons: [
             {
-                label: `Discord Tryfobia Studios`,
-                url: `https://discord.gg/WYmaHUzKjB`,
+                label: `Twitter`,
+                url: `https://twitter.com/Introversum_hq`,
             },
             {
-                label: `Discord Luminary Studios`,
-                url: `https://discord.gg/WYmaHUzKjB`,
+                label: `Discord`,
+                url: `https://discord.gg/pntFcTsUTg`,
             }
         ]
     });

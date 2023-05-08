@@ -1,8 +1,8 @@
 {
-    "name": "luminary-launcher",
-    "preductname": "Luminary Launcher",
-    "version": "1.2.2",
-    "description": "Luminary Launcher (Premium y No Premium)",
+    "name": "introversum-launcher",
+    "preductname": "Introversum Launcher",
+    "version": "1.0.0",
+    "description": "Introversum Launcher",
     "main": "src/app.js",
     "author": "Xhasi",
     "url": "http://212.192.28.131:25567/launchers/LuminaryLauncher/",
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pancrasea/Prueba1.git"
+        "url": "git+https://github.com/pancrasea/Introversum.git"
     }
 }
