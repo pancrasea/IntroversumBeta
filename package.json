@@ -1,7 +1,7 @@
 {
     "name": "introversum-launcher",
     "preductname": "Introversum Launcher Beta",
-    "version": "1.2.1",
+    "version": "1.2.2",
     "description": "Introversum Launcher Beta",
     "main": "src/app.js",
     "author": "Xhasi",
