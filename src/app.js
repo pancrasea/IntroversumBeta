@@ -16,7 +16,7 @@
         /*state: `Iniciando una Aventura!`,*/
         startTimestamp: Date.now(),
         largeImageKey: 'introversum_logo_hd',
-        largeImageText: `Logo Introversum`,
+        largeImageText: `Introversum`,
         smallImageKey: 'minecraft_logo_icon',
         smallImageText: `Minecraft`,
         instance: false,

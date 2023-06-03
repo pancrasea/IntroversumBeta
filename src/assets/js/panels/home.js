@@ -28,6 +28,7 @@ class Home {
         this.redestwbtn()
         this.redespaypalbtn()
         this.barBtns()
+        this.getPremiumName()
     }
 
     async initNews() {
@@ -134,7 +135,7 @@ class Home {
                 path: `${dataDirectory}/${process.platform == 'darwin' ? this.config.dataDirectory : `.${this.config.dataDirectory}`}`,
                 version: this.config.game_version,
                 detached: launcherSettings.launcher.close === 'close-all' ? false : true,
-                downloadFileMultiple: 30,
+                downloadFileMultiple: 20,
 
                 loader: {
                     type: this.config.loader.type,
@@ -241,6 +242,10 @@ class Home {
         document.querySelector('.settings-btn').addEventListener('click', () => {
             changePanel('settings');
         });
+        document.querySelector('.change-account-btn').addEventListener("click", () => {
+            changePanel('settings');
+        
+        });
     }
 // -----------------------(paneles internos, bar: info, proyecto etc)--------------------------------
     async barBtns() {
@@ -271,8 +276,14 @@ class Home {
                 tab2.style.display = "none";
                 tab3.style.display = "block";
             } 
+        
         });
     }
+//------------------------------------------------------------------
+
+// -----------------------(NICKNAME Y SI ES DE MICROSOFT O NO PREMIUM)--------------------------------
+
+
 //------------------------------------------------------------------
 
     async getdate(e) {

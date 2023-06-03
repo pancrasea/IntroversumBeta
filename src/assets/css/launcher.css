@@ -2,6 +2,7 @@
 @import "panels/login.css";
 @import "panels/home.css";
 @import "panels/settings.css";
+@import url('https://fonts.cdnfonts.com/css/bahnschrift');
 
 * {
     outline: none;
@@ -21,7 +22,7 @@ body {
     width: 100vw;
     height: 100vh;
     border-radius: 10px;
-    background-image: url(../images/background/fondo-lumi.png);
+    background-image: url(../images/background/fondo_random.jpg);
     /*
     position: relative;
     background-image: url(../images/background/juaniquilacopa.png);
@@ -106,6 +107,17 @@ img {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
 }
+.app-title{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin-left: 41%;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 12;
+    font: normal normal 15px/5px 'Bahnschrift';
+}
 
 .frame {
     background: transparent;
@@ -132,19 +144,20 @@ img {
     cursor: pointer;
 }
 
+.icon-close {
+    border-top-right-radius: 10px;
+}
 .icon-close:hover {
     background: #e21212;
 }
 
 .icon-minimize:hover,
-.icon-restore-down:hover,
-.icon-maximize:hover {
-    background-color: #0000009d;
+.icon-restore-down:hover {
+    background-color: #a8a8a89d;
 }
 
 .icon-close:before,
 .icon-minimize:before,
-.icon-maximize:before,
 .icon-restore-down:before {
     position: absolute;
     top: 6px;

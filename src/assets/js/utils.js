@@ -15,7 +15,7 @@ export {
     changePanel as changePanel,
     addAccount as addAccount,
     slider as Slider,
-    accountSelect as accountSelect
+    accountSelect as accountSelect,
 }
 
 function changePanel(id) {

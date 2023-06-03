@@ -180,7 +180,7 @@ class Login {
             mailInput.value = "";
             loginBtn.disabled = false;
             mailInput.disabled = false;
-            passwordInput.disabled = false;
+            passwordInput.disabled = true;
             loginBtn.style.display = "block";
             infoLogin.innerHTML = "&nbsp;";
         })

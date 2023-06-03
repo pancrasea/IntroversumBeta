@@ -1,11 +1,11 @@
 {
     "name": "introversum-launcher",
-    "preductname": "Introversum Launcher",
-    "version": "1.1.0",
-    "description": "Introversum Launcher",
+    "preductname": "Introversum Launcher Beta",
+    "version": "1.2.1",
+    "description": "Introversum Launcher Beta",
     "main": "src/app.js",
     "author": "Xhasi",
-    "url": "http://212.192.28.131:25567/launchers/LuminaryLauncher/",
+    "url": "http://212.192.28.131:25567/launchers/IntroversumBeta/",
     "engines": {
         "node": "^18.0.0"
     },
@@ -34,6 +34,6 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://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@github.com/pancrasea/Introversum.git"
+        "url": "git+https://github.com/pancrasea/IntroversumBeta.git"
     }
 }

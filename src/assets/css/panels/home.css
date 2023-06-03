@@ -13,7 +13,7 @@ body{
 .div-title-decorrido {
     display: flex;
 }
-
+/*
 .logo-img {
     background-image: url("../../images/logo/logo.png");
     background-size: cover;
@@ -21,7 +21,7 @@ body{
     background-repeat: no-repeat;
     width: 300px;
     height: 105px;
-}
+}*/
 
 .launcher-title h1 {
     text-shadow: 2px 2px 6px rgb(0, 0, 0);
@@ -39,8 +39,8 @@ body{
     bottom: 0;
     width: 100%;
     height: 70px;
-    background: #5555555b;
-    backdrop-filter: blur(10px);
+    background: #1111115b;
+    backdrop-filter: blur(5px);
     display: flex;
     align-items: center;
 }
@@ -57,7 +57,6 @@ body{
 }
 
 .player-head {
-    margin: 15px;
     background-image: url("../../images/default/setve.png");
     background-size: cover;
     background-position: center;
@@ -66,13 +65,61 @@ body{
     width: 50px;
     height: 50px;
     border: none;
-    border-radius: 15px;
+    border-radius: 5px;
     transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
 }
 
-.player-head:hover {
+.caja-account {
+    position: fixed;
+    margin-left: 40px;
+    padding: 3px;
+    width: 10% auto;
+    height: 50px;
+    background: transparent;
+    display: flex;
     border-radius: 5px;
-    transition: all 0.5s cubic-bezier(1, 0.46, 0, 1.29);
+    align-items: center;
+}
+
+.caja-account-change {
+    position: fixed;
+    padding: 3px;
+    width: auto;
+    background: transparent;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.change-account-btn {
+    border-radius: 5px;
+    background: transparent;
+    margin: 3px;
+    color: #2356ff;
+    font: normal normal 20px/15px 'Bahnschrift';
+    width: 20px;
+    height: 30px;
+    text-align: center;
+    padding-top: 17px;
+}
+
+.change-account-btn:hover {
+    background: #2356ff;
+    color: white;
+    cursor: pointer;
+}
+
+.caja-account-font{
+    margin-left: 80px;
+    color: white;
+}
+
+.caja-account-font h1{
+    font: normal normal 20px/15px 'Bahnschrift';
+}
+
+.caja-account-font h2{
+    font: normal normal 15px/10px 'Bahnschrift';
 }
 
 .settings-btn {
@@ -236,9 +283,9 @@ body{
 
 .play-btn {
     top: 15px;
-    width: 160px;
+    width: 220px;
     height: 37px;
-    border-radius: 10px;
+    border-radius: 7px;
     border-style: solid;
     border-width: 3px;
     border-color: #2356ff;
@@ -247,11 +294,11 @@ body{
     color: #f1f1f1;
     margin: 15px 0;
     transition: 0.1s;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 .play-btn:hover {
     border-radius: 10px;
-    color: #141414;
+    color: white;
     background: #2356ff;
     transition: 0.1s;
     cursor: pointer;
